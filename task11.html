@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Assignment 6: jQuery selectors, effects, DOM manipulation, and animations.">
+    <title>Task 11 - Interactive accordion</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"><span class="brand-mark">AS</span><span>Alsh<span class="brand-light">Script</span></span></a>
+        <nav class="main-nav" aria-label="Assignment tasks">
+          <a href="index.html">Overview</a>
+          <a href="task0.html">0 Setup</a>
+          <a href="task1.html">1 Selectors</a>
+          <a href="task2.html">2 Visibility</a>
+          <a href="task3.html">3 Fade</a>
+          <a href="task4.html">4 Slide</a>
+          <a href="task5.html">5 Elements</a>
+          <a href="task6.html">6 Attributes</a>
+          <a href="task7.html">7 Form</a>
+          <a href="task8.html">8 Animation</a>
+          <a href="task9.html">9 Sequence</a>
+          <a href="task10.html">10 Combined</a>
+          <a href="task11.html">11 Mini project</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container lesson-page">
+      <a class="back-link" href="index.html">&lt;- All tasks</a>
+      <div class="lesson-heading">
+        <p class="eyebrow">TASK 11 - PART 5 - MINI PROJECT</p>
+        <h1>Interactive accordion</h1>
+        <p class="lead">Expand and collapse sections with jQuery slide animations</p>
+      </div>
+      <div class="lesson-layout">
+        <section class="demo-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">JQUERY PLAYGROUND</p>
+              <h2>Explore the accordion</h2>
+            </div>
+            <span class="step-count">12 / 12</span>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false"><span>What is jQuery?</span><span class="accordion-icon" aria-hidden="true">+</span></button>
+            <div class="accordion-panel">
+              <p>jQuery is a JavaScript library that offers concise methods for selecting elements, handling events, changing content, and applying effects</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false"><span>What does slideToggle do?</span><span class="accordion-icon" aria-hidden="true">+</span></button>
+            <div class="accordion-panel">
+              <p>It slides an element open if it is hidden, and slides it closed if it is visible</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false"><span>Are these sections saved?</span><span class="accordion-icon" aria-hidden="true">+</span></button>
+            <div class="accordion-panel">
+              <p>No. This is a front-end demonstration. The open or closed state exists only while the page is loaded</p>
+            </div>
+          </div>
+        </section>
+        <aside class="info-panel">
+          <p class="eyebrow">WHAT THIS DEMONSTRATES</p>
+          <h2>Key points</h2>
+          <ul class="check-list">
+            <li>Each heading button listens for a click</li>
+            <li><code>.slideToggle()</code> expands or collapses its panel</li>
+            <li>The <code>aria-expanded</code> attribute reflects the current state</li>
+          </ul>
+          <div class="tip">
+            <strong>Student</strong>
+            <p>Alisher Ospanov - SE-2526</p>
+          </div>
+        </aside>
+      </div>
+      <a class="next-link" href="index.html"><span><small>NEXT</small><strong>Back to overview</strong></span><span aria-hidden="true">-></span></a>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner"><span>Alisher :P</span></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" defer></script>
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>

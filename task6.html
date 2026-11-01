@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Assignment 6: jQuery selectors, effects, DOM manipulation, and animations.">
+    <title>Task 06 - Change element attributes</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"><span class="brand-mark">AS</span><span>Alsh<span class="brand-light">Script</span></span></a>
+        <nav class="main-nav" aria-label="Assignment tasks">
+          <a href="index.html">Overview</a>
+          <a href="task0.html">0 Setup</a>
+          <a href="task1.html">1 Selectors</a>
+          <a href="task2.html">2 Visibility</a>
+          <a href="task3.html">3 Fade</a>
+          <a href="task4.html">4 Slide</a>
+          <a href="task5.html">5 Elements</a>
+          <a href="task6.html">6 Attributes</a>
+          <a href="task7.html">7 Form</a>
+          <a href="task8.html">8 Animation</a>
+          <a href="task9.html">9 Sequence</a>
+          <a href="task10.html">10 Combined</a>
+          <a href="task11.html">11 Mini project</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container lesson-page">
+      <a class="back-link" href="index.html">&lt;- All tasks</a>
+      <div class="lesson-heading">
+        <p class="eyebrow">TASK 06 - PART 3 - DOM MANIPULATION</p>
+        <h1>Change element attributes</h1>
+        <p class="lead">Update an image source and a link destination when buttons are clicked</p>
+      </div>
+      <div class="lesson-layout">
+        <section class="demo-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">JQUERY PLAYGROUND</p>
+              <h2>Modify image and link</h2>
+            </div>
+            <span class="step-count">07 / 12</span>
+          </div>
+          <img id="attribute-image" class="attribute-image" src="assets/images/1.jpg" alt="A cat wearing a helmet">
+          <div class="demo-row">
+            <button class="button button-secondary" id="change-image" type="button">Change image</button>
+          </div>
+          <div class="demo-stage">
+            <p class="demo-copy">The link target is updated dynamically:</p>
+            <a id="demo-link" class="preview-link" href="https://jquery.com/" target="_blank" rel="noreferrer">Open the jQuery website</a>
+          </div>
+          <div class="demo-row">
+            <button class="button button-primary" id="change-link" type="button">Change link destination</button>
+          </div>
+        </section>
+        <aside class="info-panel">
+          <p class="eyebrow">WHAT THIS DEMONSTRATES</p>
+          <h2>Key points</h2>
+          <ul class="check-list">
+            <li><code>.attr("src", value)</code> changes an image file</li>
+            <li><code>.attr("href", value)</code> changes a link destination</li>
+            <li>jQuery reads the current attribute before switching to the other value</li>
+          </ul>
+          <div class="tip">
+            <strong>Student</strong>
+            <p>Alisher Ospanov - SE-2526</p>
+          </div>
+        </aside>
+      </div>
+      <a class="next-link" href="task7.html"><span><small>NEXT</small><strong>Form interaction</strong></span><span aria-hidden="true">-></span></a>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner"><span>Alisher :P</span></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" defer></script>
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>
